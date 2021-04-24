@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do App</title>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyCL1gLd7_NL6xQrFyxet75mmc327qeZZLQ",
+    authDomain: "online-web-and-mobile-82e9a.firebaseapp.com",
+    databaseURL: "https://online-web-and-mobile-82e9a.firebaseio.com",
+    projectId: "online-web-and-mobile-82e9a",
+    storageBucket: "online-web-and-mobile-82e9a.appspot.com",
+    messagingSenderId: "980096598053",
+    appId: "1:980096598053:web:be59221572d5c1ed233fcc",
+    measurementId: "G-R0JQ56SKCN"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+</head>
+<body>
+
+    <div class = "main">
+    <div class="main1">
+        <input id = todoitem placeholder="Enter to do item" type="text">
+    </div>
+    <div class="main1">
+        <button onclick="addItem()" class = notinput>ADD ITEM</button>       
+    </div>
+      <div class="main1"> 
+        <button onclick="deleteAll()" class = notinput>DELETE ALL</button>
+    </div> 
+    <div>
+      <ul id="list">
+
+      </ul>
+    </div>
+</div>
+
+
+
+
+<!--<div id="first">
+  <input type="text"  placeholder = "Enter to do item" id = "todoitem">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button onclick="addItem()" id="addi">ADD ITEM</button>
+  &nbsp;&nbsp;&nbsp;
+  <button onclick="deleteAll()"id="delall">DELETE ALL</button>
+</div>
+<div>
+  <ul id="list">
+
+  </ul>
+</div>-->
+
+    
+    
+</body>
+<script src="app.js"></script>
+</html>
